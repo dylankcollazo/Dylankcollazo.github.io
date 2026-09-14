@@ -1,47 +1,64 @@
-<link rel="stylesheet" href="style.css">
-<h1>Hello, I'm DC</h1>
-<p>This is my first fucking website.</p>
-<button>Click me</button>
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DC — Personal Site</title>
+  <title>Your Brand — Tagline goes here</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>
-    <nav>
-      <span class="logo">DC</span>
-      <div class="links">
+  <header class="nav">
+    <div class="nav-inner">
+      <span class="logo">YourBrand</span>
+      <nav class="nav-links">
+        <a href="#services">Services</a>
         <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </nav>
+        <a href="#contact" class="nav-cta">Get Started</a>
+      </nav>
+    </div>
   </header>
 
   <section class="hero">
-    <h1>Hello, I'm DC</h1>
-    <p>A one-line intro about who you are and what you do.</p>
-    <a class="btn" href="#contact">Get in touch</a>
+    <h1>A headline that sells what you do</h1>
+    <p>A supporting line explaining the benefit to your customer in one sentence.</p>
+    <a href="#contact" class="btn">Get a Free Quote</a>
+  </section>
+
+  <section id="services" class="services">
+    <h2>What We Offer</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Service One</h3>
+        <p>A short description of the first thing you offer and why it helps.</p>
+      </div>
+      <div class="card">
+        <h3>Service Two</h3>
+        <p>A short description of the second thing you offer and why it helps.</p>
+      </div>
+      <div class="card">
+        <h3>Service Three</h3>
+        <p>A short description of the third thing you offer and why it helps.</p>
+      </div>
+    </div>
   </section>
 
   <section id="about" class="about">
-    <h2>About Me</h2>
-    <p>Im a 24 year old from Texas who currently lives in Florida but travels to Pennsylvania frequently for work. I have a girlfriend, and dog named Daisy.
-</p>
-    <img src="me.jpg" alt="a photo of me">
+    <h2>Why Choose Us</h2>
+    <p>A paragraph about who you are, what makes you different, and why customers trust you. Keep it confident and specific.</p>
   </section>
 
-  <section id="contact" class="contact">
-    <h2>Get in Touch</h2>
-    <p>Email me at <a href="mailto:dylankcollazo@gmail.com">dylankcollazo@gmail.com</a></p>
+  <section id="contact" class="cta">
+    <h2>Ready to get started?</h2>
+    <p>Reach out today and let's talk.</p>
+    <a href="mailto:you@email.com" class="btn btn-light">Contact Us</a>
   </section>
 
-  <footer>
-    <p>© 2026 DC. Built by me.</p>
+  <footer class="footer">
+    <p>© 2026 YourBrand. All rights reserved.</p>
   </footer>
 
 </body>
