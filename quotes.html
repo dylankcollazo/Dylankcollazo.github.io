@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Favorite Sales Quotes — The D2D Playbook</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">The D2D Playbook</a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact" class="nav-cta">Get Started</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="quotes reveal">
+    <p class="eyebrow">Words That Move Deals</p>
+    <h1>Favorite Sales Quotes</h1>
+    <p class="quotes-intro">The lines I come back to before I hit the doors.</p>
+
+    <blockquote class="quote">
+      <p>Every no gets you closer to a yes.</p>
+      — Sales floor wisdom
+    </blockquote>
+
+    <blockquote class="quote">
+      <p>You don't close a sale — you open a relationship.</p>
+      — Patricia Fripp
+    </blockquote>
+
+    <blockquote class="quote">
+      <p>The doors don't knock themselves.</p>
+      — Add your own
+    </blockquote>
+
+  </section>
+
+  <footer class="footer">
+    <p>© 2026 The D2D Playbook. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => { if (e.isIntersecting) e.target.classList.add('in'); });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
+  </script>
+
+</body>
+</html>
