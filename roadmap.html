@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Roadmap — The D2D Playbook</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">The D2D Playbook</a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="index.html#services">Services</a>
+        <a href="quotes.html">Quotes</a>
+        <a href="laws.html">Laws</a>
+        <a href="roadmap.html">Roadmap</a>
+        <a href="index.html#contact" class="nav-cta">Get Started</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="roadmap reveal">
+    <p class="eyebrow">The Path to Elite</p>
+    <h1>The Roadmap</h1>
+    <p class="roadmap-intro">Three phases that take you from raw rookie to high-caliber closer. Master each one in order — there are no shortcuts.</p>
+
+    <div class="phase">
+      <span class="phase-tag">Phase 01</span>
+      <h2>The Foundation</h2>
+      <p class="phase-focus">Habits &amp; Routine</p>
+      <p class="phase-body">Before technique comes discipline. Phase one builds the daily habits and routines that every top rep runs on — the non-negotiables that get you to the doors consistently and keep you there.</p>
+      <ul class="phase-points">
+        <li>Your explanation or sub-point here</li>
+        <li>Add another as we go</li>
+      </ul>
+    </div>
+
+    <div class="phase">
+      <span class="phase-tag">Phase 02</span>
+      <h2>The Fundamentals</h2>
+      <p class="phase-focus">The Core Concepts</p>
+      <p class="phase-body">Now the craft. Phase two is where you learn the systems that actually move deals — the 6 Concepts, the 3 Tens, and more. This is the skill set that separates order-takers from closers.</p>
+      <ul class="phase-points">
+        <li>The 6 Concepts</li>
+        <li>The 3 Tens</li>
+        <li>We'll add more as we go</li>
+      </ul>
+    </div>
+
+    <div class="phase">
+      <span class="phase-tag">Phase 03</span>
+      <h2>The Details</h2>
+      <p class="phase-focus">Refinement &amp; Mastery</p>
+      <p class="phase-body">The finishing touches. Phase three is about refining the tedious details most reps ignore — the small edges that compound into an elite closer. This is where good becomes untouchable.</p>
+      <ul class="phase-points">
+        <li>Your explanation or sub-point here</li>
+        <li>Add another as we go</li>
+      </ul>
+    </div>
+
+  </section>
+
+  <footer class="footer">
+    <p>© 2026 The D2D Playbook. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => { if (e.isIntersecting) e.target.classList.add('in'); });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
+  </script>
+
+</body>
+</html>
