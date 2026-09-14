@@ -83,6 +83,16 @@ h1, h2, h3 {
 .about { background: var(--light); text-align: center; padding: 80px 20px; }
 .about h2 { font-size: 32px; margin-bottom: 20px; }
 .about p { max-width: 650px; margin: 0 auto; font-size: 18px; }
+.about-photo {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 24px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+}
+.about, .services, .cta { scroll-margin-top: 150px; }
 
 .cta { background: var(--dark); color: var(--white); text-align: center; padding: 80px 20px; }
 .cta h2 { color: var(--white); font-size: 32px; margin-bottom: 12px; }
