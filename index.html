@@ -3,18 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The D2D Playbook — Solar Sales Training That Works</title>
+  <title>The D2D Playbook — Solar Sales Training That Works</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <header class="nav">
     <div class="nav-inner">
-            <span class="logo">THE PLAYBOOK</span>
-
+      <span class="logo">The D2D Playbook</span>
       <nav class="nav-links">
         <a href="#services">Services</a>
         <a href="#about">About</a>
@@ -23,45 +23,59 @@
     </div>
   </header>
 
-    <section class="hero">
+  <section class="hero reveal">
+    <p class="eyebrow">Door-to-Door Solar Sales Training</p>
     <h1>Go From Knocking Doors to Running the Show</h1>
-    <p>The step-by-step system for solar reps who want to set more, close more, and lead their own team — built from 3+ years in the field and 150+ personal closes in less than 3 years.</p>
+    <p>The step-by-step system for solar reps who want to set more, close more, and lead their own team — built from 3+ years in the field and 150+ personal closes.</p>
     <a href="#contact" class="btn">Start Training</a>
   </section>
 
-    <section id="services" class="services">
+  <section id="services" class="services reveal">
+    <p class="eyebrow">The Path</p>
     <h2>Training for Every Stage of Your Solar Career</h2>
     <div class="cards">
       <div class="card">
+        <span class="card-num">01</span>
         <h3>Setter Training</h3>
         <p>Master the doors. Build the confidence to knock, handle rejection, and book qualified appointments that actually sit — the foundation every solar career is built on.</p>
       </div>
       <div class="card">
+        <span class="card-num">02</span>
         <h3>Self-Gen / Closer Training</h3>
         <p>Own the full cycle. Generate your own leads and close them with a proven process — from building rapport to handling objections to signing the deal.</p>
       </div>
       <div class="card">
+        <span class="card-num">03</span>
         <h3>Manager Training</h3>
         <p>Lead the team. Recruit, train, and duplicate top performers so you can step out of the field and build an organization that scales.</p>
       </div>
     </div>
   </section>
 
-      <section id="about" class="about">
+  <section id="about" class="about reveal">
+    <p class="eyebrow">Who's Behind It</p>
     <h2>Why Learn From The D2D Playbook</h2>
-    <img src="dc.png" alt="DC, founder of The D2D Playbook" class="about-photo">
-    <p>This isn't theory from someone who read about solar - it's the exact system used to close 150+ accounts in just 2 years and over 11,000+ sales interactions in 3 years of knocking doors. Every lesson comes from real reps, real doors, and real deals. Whether you're just trying to get your first sale or building your own office, The D2D Playbook gives you a proven path to get there faster.</p>
+    <img src="founder.png" alt="Dylan Collazo, founder of The D2D Playbook" class="about-photo">
+    <p>This isn't theory from someone who read about solar — it's the exact system used to close 150+ accounts in just over 3 years knocking doors. Every lesson comes from real reps, real doors, and real deals. Whether you're picking up your first clipboard or building toward your own office, The D2D Playbook gives you a proven path to get there faster.</p>
   </section>
 
-    <section id="contact" class="cta">
+  <section id="contact" class="cta reveal">
+    <p class="eyebrow">Let's Connect</p>
     <h2>Ready to get started?</h2>
-    <p>Lets connect.</p>
-    <a href="https://instagram.com/dylancollazo24" class="btn btn-light" target="_blank">Message me</a>
+    <p>Reach out today and let's talk.</p>
+    <a href="https://instagram.com/dylancollazo24" class="btn" target="_blank">Instagram</a>
   </section>
 
   <footer class="footer">
-    <p>© 2026 The Playbook. All rights reserved.</p>
+    <p>© 2026 The D2D Playbook. All rights reserved.</p>
   </footer>
+
+  <script>
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => { if (e.isIntersecting) e.target.classList.add('in'); });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
+  </script>
 
 </body>
 </html>
