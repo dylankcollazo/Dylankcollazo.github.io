@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Laws of Door-to-Door — The D2D Playbook</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">The D2D Playbook</a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="index.html#services">Services</a>
+        <a href="quotes.html">Quotes</a>
+        <a href="laws.html">Laws</a>
+        <a href="index.html#contact" class="nav-cta">Get Started</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="laws reveal">
+    <p class="eyebrow">The Code of the Doors</p>
+    <h1>The Laws of Door-to-Door</h1>
+    <p class="laws-intro">The non-negotiables that separate the reps who make it from the ones who quit.</p>
+
+    <ol class="law-list">
+      <li class="law">
+        <h3>Law One</h3>
+        <p>The state your explanation of what this law means and why it matters in the field.</p>
+      </li>
+      <li class="law">
+        <h3>Law Two</h3>
+        <p>Your explanation here — keep it punchy and practical, like advice you'd give a new rep.</p>
+      </li>
+      <li class="law">
+        <h3>Law Three</h3>
+        <p>Your explanation here.</p>
+      </li>
+    </ol>
+
+  </section>
+
+  <footer class="footer">
+    <p>© 2026 The D2D Playbook. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => { if (e.isIntersecting) e.target.classList.add('in'); });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
+  </script>
+
+</body>
+</html>
