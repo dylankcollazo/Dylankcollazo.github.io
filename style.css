@@ -333,3 +333,9 @@ section { padding: 90px 24px; scroll-margin-top: 130px; }
 .signup-form input::placeholder { color: var(--muted); }
 .signup-form input:focus { outline: none; border-color: var(--accent); }
 .signup-form .btn { border: none; cursor: pointer; margin-top: 8px; }
+/* HERO BUTTONS — STACKED & CENTERED */
+.hero .btn {
+  display: block;
+  width: fit-content;
+  margin: 12px auto;
+}
