@@ -355,3 +355,11 @@ section { padding: 90px 24px; scroll-margin-top: 130px; }
   font-weight: 500;
   font-size: 16px;
 }
+/* SPAM NOTE */
+.signup-note {
+  font-size: 13px;
+  color: var(--muted);
+  margin-top: -20px;
+  margin-bottom: 32px;
+  opacity: 0.8;
+}
