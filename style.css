@@ -363,3 +363,19 @@ section { padding: 90px 24px; scroll-margin-top: 130px; }
   margin-bottom: 32px;
   opacity: 0.8;
 }
+/* ROADMAP PROMOTION METRIC */
+.phase-goal {
+  margin-top: 16px;
+  padding: 14px 18px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--accent);
+  border-radius: 3px;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  color: var(--text);
+}
+.phase-goal span {
+  color: var(--accent);
+  font-weight: 500;
+}
